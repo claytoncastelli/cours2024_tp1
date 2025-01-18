@@ -45,7 +45,7 @@ class NumericalImputer(BaseEstimator, TransformerMixin):
 
     def transform(self, X):
         X = X.copy()
-        for feature in self.variables:
+        for feature in self.variables:            
             #X[feature].fillna(self.imputer_dict_[feature], inplace=True)
             X.fillna({feature: self.imputer_dict_[feature]}, inplace=True)
         return X
