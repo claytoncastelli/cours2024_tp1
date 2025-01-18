@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
 
+from regression_model.processing.errors import InvalidModelInputError
+
 
 class CategoricalImputer(BaseEstimator, TransformerMixin):
     """Categorical data missing value imputer."""
@@ -90,7 +92,8 @@ class RareLabelCategoricalEncoder(BaseEstimator, TransformerMixin):
 
         for var in self.variables:
             # the encoder will learn the most frequent categories
-            t = pd.Series(X[var].value_counts() / np.float64(len(X)))
+            #t = pd.Series(X[var].value_counts() / np.float(len(X)))
+            t = pd.Series(X[var].value_counts() / float(len(X)))
             # frequent labels:
             self.encoder_dict_[var] = list(t[t >= self.tol].index)
 
@@ -140,7 +143,7 @@ class CategoricalEncoder(BaseEstimator, TransformerMixin):
             vars_ = {
                 key: value for (key, value) in null_counts.items() if value is True
             }
-            raise ValueError(
+            raise InvalidModelInputError(
                 f"Categorical encoder has introduced NaN when "
                 f"transforming categorical variables: {vars_.keys()}"
             )
