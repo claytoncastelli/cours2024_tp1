@@ -6,6 +6,7 @@
 #scikit-learn>=0.22.1,<0.23.0
 #pip3 freeze > requirements.txt  # Python3
 #pip freeze > requirements.txt  # Python2
+build==1.2.2.post1
 bleach==6.2.0
 cachetools==5.5.0
 certifi==2024.12.14
