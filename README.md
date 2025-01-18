@@ -13,6 +13,21 @@ Partie-5: https://1drv.ms/u/s!Aprdoflisld-hLwDmUEOTI_iku5ZxQ?e=fnXuoG
 
 Partie-6: https://1drv.ms/u/s!Aprdoflisld-hLwIU5yZim6_JW7NHw?e=eSy0RT
 
+
+Partie-7: https://1drv.ms/u/s!Aprdoflisld-hLwGWmC6cfrNBb-_Nw?e=MYHj0t
+
+Partie-8: https://1drv.ms/u/s!Aprdoflisld-hLwJoM0cFxuZ5ybHPg?e=UYDqLC
+
+Partie-9: https://1drv.ms/u/s!Aprdoflisld-hLwMNBk_cvRzmlwMUw?e=uvxkWF
+
+Partie-10: https://1drv.ms/u/s!Aprdoflisld-hLt6FyaDYSw8hhhx_g?e=0QY93r
+
+Partie-11: https://1drv.ms/u/s!Aprdoflisld-hLt7GIb2XbcnSIARDg?e=ZCwltq
+
+Partie-12: https://1drv.ms/u/s!Aprdoflisld-hedAJlPM50VIi-GOWg?e=aB0oUd
+
+
+
 install tox
 	pip install tox
 
