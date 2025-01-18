@@ -1,0 +1,8 @@
+# api
+#flask==1.0.2
+flask==2.3.1
+
+# local regression_model package
+# update with your local path
+#-e "C:\Users\Dell\Desktop\cours-A61\cours-A61\packages\regression_model"
+-e "/home/ccasteli/tp1_final/cours2024_tp1/packages/regression_model"
